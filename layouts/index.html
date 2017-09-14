@@ -1,0 +1,686 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="A blog for kivy development basics">
+      
+      
+      
+        <meta name="author" content="Ngenge Senior">
+      
+      
+        <link rel="shortcut icon" href="../assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.10.0">
+    
+    
+      
+        <title>Layouts - Kivy Development Blog</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-e826f8942a.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-b6a6d08807.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    
+  </head>
+  
+  
+  
+  
+    <body>
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Kivy Development Blog" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon md-icon--home"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+            
+            Layouts
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/ngengesenior/kivy-development-blog" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <div class="md-nav__button md-logo">
+      
+        <i class="md-icon md-icon--home"></i>
+      
+    </div>
+    Kivy Development Blog
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/ngengesenior/kivy-development-blog" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../about/about-author/" title="About Author" class="md-nav__link">
+      About Author
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../about/about-kivy/" title="About Kivy" class="md-nav__link">
+      About Kivy
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Layouts
+      </label>
+    
+    <a href="./" title="Layouts" class="md-nav__link md-nav__link--active">
+      Layouts
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#boxlayout" title="BoxLayout" class="md-nav__link">
+    BoxLayout
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explanation" title="Explanation" class="md-nav__link">
+    Explanation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-add_widget" title="Method add_widget()" class="md-nav__link">
+    Method add_widget()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vertical-boxlayout" title="Vertical BoxLayout" class="md-nav__link">
+    Vertical BoxLayout
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important" title="Important" class="md-nav__link">
+    Important
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gridlayouts" title="GridLayouts" class="md-nav__link">
+    GridLayouts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#up-till-now-only-buttons" title="Up till now Only Buttons?" class="md-nav__link">
+    Up till now Only Buttons?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anchorlayout" title="AnchorLayout" class="md-nav__link">
+    AnchorLayout
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-that-new-size_hint-stuff" title="What is that new size_hint stuff?" class="md-nav__link">
+    What is that new size_hint stuff?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-layouts" title="More Layouts" class="md-nav__link">
+    More Layouts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-next" title="What next?" class="md-nav__link">
+    What next?
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#boxlayout" title="BoxLayout" class="md-nav__link">
+    BoxLayout
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explanation" title="Explanation" class="md-nav__link">
+    Explanation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-add_widget" title="Method add_widget()" class="md-nav__link">
+    Method add_widget()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vertical-boxlayout" title="Vertical BoxLayout" class="md-nav__link">
+    Vertical BoxLayout
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important" title="Important" class="md-nav__link">
+    Important
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gridlayouts" title="GridLayouts" class="md-nav__link">
+    GridLayouts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#up-till-now-only-buttons" title="Up till now Only Buttons?" class="md-nav__link">
+    Up till now Only Buttons?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anchorlayout" title="AnchorLayout" class="md-nav__link">
+    AnchorLayout
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-that-new-size_hint-stuff" title="What is that new size_hint stuff?" class="md-nav__link">
+    What is that new size_hint stuff?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-layouts" title="More Layouts" class="md-nav__link">
+    More Layouts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-next" title="What next?" class="md-nav__link">
+    What next?
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/ngengesenior/kivy-development-blog/edit/master/docs/layouts.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="layouts">Layouts</h1>
+<p>As mentioned in the previous section, layouts serve as containers for holding widgets and other layouts as well.In fact layouts are widgets as well. We will not mention all the layouts here, but we will work with the most important or most widely used ones that you will need.
+The following are some , if not all layouts of kivy: AnchorLayout,BoxLayout,FloatLayout,GridLayout,PageLayout,RelativeLayout,ScatterLayout and more. But the ones that are widely used are BoxLayout,GridLayout.For a list of all layouts, you can always refer to the kivy documentation.</p>
+<h2 id="boxlayout">BoxLayout</h2>
+<p>The BoxLayout places widgets on the screen either vertically,  or horizontally.So you can say that a BoxLayout is either a vertical BoxLayout or a horizontal BoxLayout. Let us see a BoxLayout with three buttons.</p>
+<pre><code class="python">from kivy.app import App
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.button import Button
+
+
+class RootWidget(BoxLayout):
+    def __init__(self,**kwargs):
+        super(RootWidget,self).__init__(**kwargs)
+        self.orientation = 'horizontal'
+        self.add_widget(Button(text='Button1'))
+        self.add_widget(Button(text='Button2'))
+        self.add_widget(Button(text='Button3'))
+
+
+
+class MainApp(App):
+    def build(self):
+        return RootWidget()
+if __name__ ==&quot;__main__&quot;:
+    MainApp().run() 
+</code></pre>
+
+<p>This produces the following image</p>
+<p><img alt="boxlayout" src="../images/boxlayout.png" /></p>
+<h2 id="explanation">Explanation</h2>
+<p>The first few lines do the usual imports. And note that you must import anything that you need before you can use it.
+Previously, we returned just a button in the build method of our App class. But to have a layout with more widgets, in this case we create our own BoxLayout that we call RootWidget.It is not mandatory to call it RootWidget but you can give it the name you want. If you have done Object Oriented Python, the <code>__init__</code> method should not be new to you. We call super() within init, and what that does it to call the <code>__init__</code> method of our parent widget <code>BoxLayout</code>. As seen on the above image,the buttons are laid out from left to right and each occupies the same amount of space.This is done by the line</p>
+<pre><code class="python">self.orientation = 'horizontal'
+</code></pre>
+
+<p>We told it to lay the children widgets from left to right.</p>
+<h3 id="method-add_widget">Method add_widget()</h3>
+<p>Calling self.add_widget() simply means that we want a widget, in this case Buttons, to be added to the layout.You pass to add_widget() a widget instance.</p>
+<h2 id="vertical-boxlayout">Vertical BoxLayout</h2>
+<p>To have out buttons displayed vertically, just change the line </p>
+<pre><code class="python">self.orientation = 'horizontal' 
+</code></pre>
+
+<p>to</p>
+<pre><code class="python">self.orientation = 'vertical' 
+</code></pre>
+
+<p>You should now see the following image rendered</p>
+<p><img alt="Vertical boxlayout" src="../images/vertical-boxlayout.png" /></p>
+<h2 id="important">Important</h2>
+<p>Something that we forgot to mention in the previous section is that you must call App().run() before you can see your application displayed</p>
+<h2 id="gridlayouts">GridLayouts</h2>
+<p>The GridLayout widget is a widget that arranges its children in grids. It has two important properties; <strong>cols and rows</strong>. You set <code>cols</code> when want a certain number of columns and <code>rows</code> when you want a certain number of rows. So if I have a gridlayout widget and I set the property <code>self.cols = 3</code>, the widget will be arranged in three columns. Enough of the talk. Let us see some code..</p>
+<pre><code class="python">from kivy.app import App
+from kivy.uix.button import Button
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.gridlayout import GridLayout
+
+
+class RootWidget(GridLayout):
+    def __init__(self,**kwargs):
+        super(RootWidget,self).__init__(**kwargs)
+        self.cols = 3
+        self.add_widget(Button(text='Button1'))
+        self.add_widget(Button(text='Button2'))
+        self.add_widget(Button(text='Button3'))
+        self.add_widget(Button(text='Button4'))
+        self.add_widget(Button(text='Button5'))
+        self.add_widget(Button(text='Button6'))
+        self.add_widget(Button(text='Button7'))
+        self.add_widget(Button(text='Button8'))
+        self.add_widget(Button(text='Button9'))
+
+class MainApp(App):
+    def build(self):
+        return RootWidget()
+if __name__ ==&quot;__main__&quot;:
+    MainApp().run() 
+</code></pre>
+
+<p>This renders the following image </p>
+<p><img alt="gridlayout" src="../images/gridlayout.png" /></p>
+<p>We set cols property to <strong>cols</strong> property to 3 and the layout knows what to do. When you add three children, the fourth will be added on the next row.
+Now go and change the line that reads</p>
+<pre><code class="python">self.cols = 3
+</code></pre>
+
+<p>to</p>
+<pre><code class="python">self.rows = 2
+</code></pre>
+
+<p>This forces the layout to have two rows of items. The image is shown below</p>
+<p><img alt="Gridlayout with rows" src="../images/grid-rows.png" /></p>
+<p>Try adding more buttons to the layout. You will find out that the buttons will always be forced to two rows.</p>
+<h2 id="up-till-now-only-buttons">Up till now Only Buttons?</h2>
+<p>All we have been doing is play with buttons. Do not get bothered so soon. We will be seeing more widgets soon. Here, all I want to do is introduce you to make you know all the necessary layouts that you will encounter or need. In fact in the next section we will build our first meaningful app. I do not know what we will build yet but let's proceed with our layouts..</p>
+<h2 id="anchorlayout">AnchorLayout</h2>
+<p>The anchorlayout is used when you want widgets placed on a particular location on the screen. It is controlled by the properties <code>anchor_x</code> and <code>anchor_y</code>. Setting anchor_x to <strong>left</strong> means that the widgets will be placed on the leftmost part of your layout. Other possible values for anchor_x are, <strong>center</strong>,and <strong>right</strong>. Property <code>anchor_y</code> controls where widgets are placed on the y-axis of your layout. Possible values for anchor_y are <strong>center</strong>,<strong>top</strong>,<strong>top</strong>.
+Let us see some sample code </p>
+<pre><code class="python">from kivy.uix.anchorlayout import AnchorLayout
+from kivy.uix.button import Button
+from kivy.app import App
+
+class Anchor(AnchorLayout):
+    def __init__(self, **kwargs):
+        super(Anchor,self).__init__(**kwargs)
+        self.anchor_x = 'left'
+        self.anchor_y = 'bottom'
+        b1 = Button(text='B1',size_hint=(.4,.3))   
+        b2 = Button(text='B2',size_hint=(.2,.3))    
+        b3 = Button(text='B3',size_hint=(.2,.5))    
+        b4 = Button(text='B4',size_hint=(.2,.2))  
+        self.add_widget(b1)
+        self.add_widget(b2)
+        self.add_widget(b3)
+        self.add_widget(b4)
+class MainApp(App):
+    def build(self):
+        return Anchor()
+
+if __name__ == '__main__':
+    MainApp().run()
+</code></pre>
+
+<p>The image rendered follows</p>
+<p><img alt="Anchorlayout" src="../images/anchor.png" /></p>
+<p>You will see the widgets stacked to the bottom left of the screen. Try altering the values for anchor_x and anchor_y to see the effect. The truth is I rarely use the AnchorLayout but it is good fo absolute positioning.</p>
+<h2 id="what-is-that-new-size_hint-stuff">What is that new size_hint stuff?</h2>
+<p>If you have gone through the code, you will see a new thing, the <strong>size_hint</strong> on the buttons. The size_hint is a tuple or list. It sets the size for the width and height, the first being the width and the second being the height.</p>
+<pre><code>size_hint = (.2,.4)
+</code></pre>
+
+<p>means that we want the button to take 20% of the parent layout's width,Anchor and 40% of the height . If we did not specify the size_hint on the buttons, the only widget displayed will have been the widget added last, that is b4. More about size_hinting in the future..</p>
+<h2 id="more-layouts">More Layouts</h2>
+<p>I will leave the layouts stuff here. I will advise you to check the RelativeLayout and FloatLayout most importantly. You should also check others mentioned or not mentioned because we will use them in other parts.</p>
+<h2 id="what-next">What next?</h2>
+<p>Let us build our first app in the next section..</p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../getting-started/" title="Getting Started" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Getting Started
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 <a href="https://linkedin.com/in/ngengesenior"> Ngenge Senior</a>
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-f3ab9e5ff8.js"></script>
+      
+      
+      <script>app.initialize({url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

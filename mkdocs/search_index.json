@@ -1,0 +1,144 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Welcome to Kivy Development blog\n\n\nHello to all the \nPython coders\n and those still joining the movement.A special one to those who are enthusiastic about \nKivy\n.Here, we will dive into the basics and hopefully to the deep parts of the Kivy framework.\n\n\nWho is this for?\n\n\nThis blog is for anyone who wants to build the the \ncoolest\n interfaces the easier way and most importantly, the building of \ncross platform UIs\n without code modification.That is you build a single app that runs on Linux,Ios, Android , Windows and even the Raspbian Os without much modification of code.\nThe beauty of all this is that you do not need to know Java for building an Android app, or Objective C or Swift for Ios or C Sharp for Windows. The main requirement here is for you to have an understanding of at least the basics of \nObject oriented Python\n.\n\n\nWhy you should follow this?\n\n\n\n\nYou would probably say there are tonnes of Kivy tutorials on Youtube and other blogs but why should I take this one? You are right if you ask such a question because in fact a couple of Youtube tutorials like those of \nDerek Banas\n have helped me a lot in my journey with Kivy but I have faced a lot learning Kivy and have been able to get around things and some key tricks required in Kivy . So I think you will get to learn a lot from this experience.\n\n\nExpectations\n\n\nAt the end, my hopes are that you should be able to build good apps with Kivy that are cross platform and also to be able to integrate it with other Apis to build your apps.\n\n\nHappy coding!!", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#welcome-to-kivy-development-blog", 
+            "text": "Hello to all the  Python coders  and those still joining the movement.A special one to those who are enthusiastic about  Kivy .Here, we will dive into the basics and hopefully to the deep parts of the Kivy framework.", 
+            "title": "Welcome to Kivy Development blog"
+        }, 
+        {
+            "location": "/#who-is-this-for", 
+            "text": "This blog is for anyone who wants to build the the  coolest  interfaces the easier way and most importantly, the building of  cross platform UIs  without code modification.That is you build a single app that runs on Linux,Ios, Android , Windows and even the Raspbian Os without much modification of code.\nThe beauty of all this is that you do not need to know Java for building an Android app, or Objective C or Swift for Ios or C Sharp for Windows. The main requirement here is for you to have an understanding of at least the basics of  Object oriented Python .", 
+            "title": "Who is this for?"
+        }, 
+        {
+            "location": "/#why-you-should-follow-this", 
+            "text": "You would probably say there are tonnes of Kivy tutorials on Youtube and other blogs but why should I take this one? You are right if you ask such a question because in fact a couple of Youtube tutorials like those of  Derek Banas  have helped me a lot in my journey with Kivy but I have faced a lot learning Kivy and have been able to get around things and some key tricks required in Kivy . So I think you will get to learn a lot from this experience.", 
+            "title": "Why you should follow this?"
+        }, 
+        {
+            "location": "/#expectations", 
+            "text": "At the end, my hopes are that you should be able to build good apps with Kivy that are cross platform and also to be able to integrate it with other Apis to build your apps.  Happy coding!!", 
+            "title": "Expectations"
+        }, 
+        {
+            "location": "/about/about-author/", 
+            "text": "About me\n\n\nI am Ngenge Senior and a Bsc. student of the University of Buea, Cameroon.I have been studying Python for close to two and a half years now and Kivy for a about one and a half years. I am also part of \nNjaka\n which is aimed at introducing kids to programming through Scratch and web development.\n\n\n\n\nHow I got to know Kivy\n\n\nAll the codes that I wrote initially when I started Python programming in Python was always code that ran in the console.But I got inspired by a friend of mind when he built a calculator app using Tkinter which is part of Python itself.I gave a try to Tkinter but it was a bit boring to me so I had to do an internet search on best GUI frameworks for Python. That is how I came to  know \nKivy\n. Today, I try to render 70% of my test apps using Kivy.", 
+            "title": "About Author"
+        }, 
+        {
+            "location": "/about/about-author/#about-me", 
+            "text": "I am Ngenge Senior and a Bsc. student of the University of Buea, Cameroon.I have been studying Python for close to two and a half years now and Kivy for a about one and a half years. I am also part of  Njaka  which is aimed at introducing kids to programming through Scratch and web development.", 
+            "title": "About me"
+        }, 
+        {
+            "location": "/about/about-author/#how-i-got-to-know-kivy", 
+            "text": "All the codes that I wrote initially when I started Python programming in Python was always code that ran in the console.But I got inspired by a friend of mind when he built a calculator app using Tkinter which is part of Python itself.I gave a try to Tkinter but it was a bit boring to me so I had to do an internet search on best GUI frameworks for Python. That is how I came to  know  Kivy . Today, I try to render 70% of my test apps using Kivy.", 
+            "title": "How I got to know Kivy"
+        }, 
+        {
+            "location": "/about/about-kivy/", 
+            "text": "What is Kivy?\n\n\nKivy is a Natural User Interface Python framework built with a couple of tools. These include \nPython\n,\nCython\n, Open Gl Es2 and more. You can check more about kivy on the \nKivy website\n. Kivy has not been around for a long time but it has gained so much popularity compared  to the old GUI frameworks such as PyQt. The power of Kivy is that it is cross platform and it has a great community of maintainers , it is well documented and it is Open Source.\n\n\nStill having doubts?\n\n\nIf you still doubt the power of Kivy, then check the Kivy gallery on the website for a list of great apps built using it and you can get access to the codes of some of the apps.\n\n\nI am expecting that you try kivy because in the next section, we are getting into coding.Let's get into the basics in the next section.", 
+            "title": "About Kivy"
+        }, 
+        {
+            "location": "/about/about-kivy/#what-is-kivy", 
+            "text": "Kivy is a Natural User Interface Python framework built with a couple of tools. These include  Python , Cython , Open Gl Es2 and more. You can check more about kivy on the  Kivy website . Kivy has not been around for a long time but it has gained so much popularity compared  to the old GUI frameworks such as PyQt. The power of Kivy is that it is cross platform and it has a great community of maintainers , it is well documented and it is Open Source.", 
+            "title": "What is Kivy?"
+        }, 
+        {
+            "location": "/about/about-kivy/#still-having-doubts", 
+            "text": "If you still doubt the power of Kivy, then check the Kivy gallery on the website for a list of great apps built using it and you can get access to the codes of some of the apps.  I am expecting that you try kivy because in the next section, we are getting into coding.Let's get into the basics in the next section.", 
+            "title": "Still having doubts?"
+        }, 
+        {
+            "location": "/getting-started/", 
+            "text": "Getting Started\n\n\nAt the moment of writing, \nKivy\n is at version 1.10.0 and it has a rich number of widgets.The most important widgets in Kivy are found in the \nkivy.uix\n module.This module is what you will work with most of the time. It has widgets such as Button,Label,Switch, and other widgets are \ncontainers\n meaning they can contain others. Such container widgets include FloatLayout,BoxLayout,GridLayout,RelativeLayout and more. Let us see the traditional hello world way of introducing a new concept.\n\n\nfrom kivy.app import App\nfrom kivy.uix.button import Button\n\n\nclass MainApp(App):\n    def build(self):\n        return Button(text='Hello World')\nif __name__ == \n__main__\n:\n    MainApp().run()\n\n\n\n\nOn running the code snippet above, the following is what you will see \n\n\n\n\nExplanation of code\n\n\nAll the code thus is return a button with the text \nHello World\n.\nIn the first line, we import the app.App class .Now the app class serves the purpose of returning what is generally known as the ==\nroot widget\n== in the app.App.build method. Every kivy application requires the App class since the root widget will be returned only in the App class. The so called \nroot widget\n is the whole UI that you want to render.In this our case, we used only a button as our root widget but in a bit complex apps, your root widgted will be mostly layouts like  BoxLayout.\nThe second import is that of the button.As earlier mentioned, we will mostly be using stuff from kivy.uix module.In the next section, I will introduce the concept of layouts in pure Python code , before we get to know kivy's own magic kv lang. \n\n\nNote\n\n\nEvery kivy application must have a class the inherits from kivy.app.App and the class must implement the build method before anything can be rendered to the screen.", 
+            "title": "Getting Started"
+        }, 
+        {
+            "location": "/getting-started/#getting-started", 
+            "text": "At the moment of writing,  Kivy  is at version 1.10.0 and it has a rich number of widgets.The most important widgets in Kivy are found in the  kivy.uix  module.This module is what you will work with most of the time. It has widgets such as Button,Label,Switch, and other widgets are  containers  meaning they can contain others. Such container widgets include FloatLayout,BoxLayout,GridLayout,RelativeLayout and more. Let us see the traditional hello world way of introducing a new concept.  from kivy.app import App\nfrom kivy.uix.button import Button\n\n\nclass MainApp(App):\n    def build(self):\n        return Button(text='Hello World')\nif __name__ ==  __main__ :\n    MainApp().run()  On running the code snippet above, the following is what you will see", 
+            "title": "Getting Started"
+        }, 
+        {
+            "location": "/getting-started/#explanation-of-code", 
+            "text": "All the code thus is return a button with the text  Hello World .\nIn the first line, we import the app.App class .Now the app class serves the purpose of returning what is generally known as the == root widget == in the app.App.build method. Every kivy application requires the App class since the root widget will be returned only in the App class. The so called  root widget  is the whole UI that you want to render.In this our case, we used only a button as our root widget but in a bit complex apps, your root widgted will be mostly layouts like  BoxLayout.\nThe second import is that of the button.As earlier mentioned, we will mostly be using stuff from kivy.uix module.In the next section, I will introduce the concept of layouts in pure Python code , before we get to know kivy's own magic kv lang.", 
+            "title": "Explanation of code"
+        }, 
+        {
+            "location": "/getting-started/#note", 
+            "text": "Every kivy application must have a class the inherits from kivy.app.App and the class must implement the build method before anything can be rendered to the screen.", 
+            "title": "Note"
+        }, 
+        {
+            "location": "/layouts/", 
+            "text": "Layouts\n\n\nAs mentioned in the previous section, layouts serve as containers for holding widgets and other layouts as well.In fact layouts are widgets as well. We will not mention all the layouts here, but we will work with the most important or most widely used ones that you will need.\nThe following are some , if not all layouts of kivy: AnchorLayout,BoxLayout,FloatLayout,GridLayout,PageLayout,RelativeLayout,ScatterLayout and more. But the ones that are widely used are BoxLayout,GridLayout.For a list of all layouts, you can always refer to the kivy documentation.\n\n\nBoxLayout\n\n\nThe BoxLayout places widgets on the screen either vertically,  or horizontally.So you can say that a BoxLayout is either a vertical BoxLayout or a horizontal BoxLayout. Let us see a BoxLayout with three buttons.\n\n\nfrom kivy.app import App\nfrom kivy.uix.boxlayout import BoxLayout\nfrom kivy.uix.button import Button\n\n\nclass RootWidget(BoxLayout):\n    def __init__(self,**kwargs):\n        super(RootWidget,self).__init__(**kwargs)\n        self.orientation = 'horizontal'\n        self.add_widget(Button(text='Button1'))\n        self.add_widget(Button(text='Button2'))\n        self.add_widget(Button(text='Button3'))\n\n\n\nclass MainApp(App):\n    def build(self):\n        return RootWidget()\nif __name__ ==\n__main__\n:\n    MainApp().run() \n\n\n\n\nThis produces the following image\n\n\n\n\nExplanation\n\n\nThe first few lines do the usual imports. And note that you must import anything that you need before you can use it.\nPreviously, we returned just a button in the build method of our App class. But to have a layout with more widgets, in this case we create our own BoxLayout that we call RootWidget.It is not mandatory to call it RootWidget but you can give it the name you want. If you have done Object Oriented Python, the \n__init__\n method should not be new to you. We call super() within init, and what that does it to call the \n__init__\n method of our parent widget \nBoxLayout\n. As seen on the above image,the buttons are laid out from left to right and each occupies the same amount of space.This is done by the line\n\n\nself.orientation = 'horizontal'\n\n\n\n\nWe told it to lay the children widgets from left to right.\n\n\nMethod add_widget()\n\n\nCalling self.add_widget() simply means that we want a widget, in this case Buttons, to be added to the layout.You pass to add_widget() a widget instance.\n\n\nVertical BoxLayout\n\n\nTo have out buttons displayed vertically, just change the line \n\n\nself.orientation = 'horizontal' \n\n\n\n\nto\n\n\nself.orientation = 'vertical' \n\n\n\n\nYou should now see the following image rendered\n\n\n\n\nImportant\n\n\nSomething that we forgot to mention in the previous section is that you must call App().run() before you can see your application displayed\n\n\nGridLayouts\n\n\nThe GridLayout widget is a widget that arranges its children in grids. It has two important properties; \ncols and rows\n. You set \ncols\n when want a certain number of columns and \nrows\n when you want a certain number of rows. So if I have a gridlayout widget and I set the property \nself.cols = 3\n, the widget will be arranged in three columns. Enough of the talk. Let us see some code..\n\n\nfrom kivy.app import App\nfrom kivy.uix.button import Button\nfrom kivy.uix.boxlayout import BoxLayout\nfrom kivy.uix.gridlayout import GridLayout\n\n\nclass RootWidget(GridLayout):\n    def __init__(self,**kwargs):\n        super(RootWidget,self).__init__(**kwargs)\n        self.cols = 3\n        self.add_widget(Button(text='Button1'))\n        self.add_widget(Button(text='Button2'))\n        self.add_widget(Button(text='Button3'))\n        self.add_widget(Button(text='Button4'))\n        self.add_widget(Button(text='Button5'))\n        self.add_widget(Button(text='Button6'))\n        self.add_widget(Button(text='Button7'))\n        self.add_widget(Button(text='Button8'))\n        self.add_widget(Button(text='Button9'))\n\nclass MainApp(App):\n    def build(self):\n        return RootWidget()\nif __name__ ==\n__main__\n:\n    MainApp().run() \n\n\n\n\nThis renders the following image \n\n\n\n\nWe set cols property to \ncols\n property to 3 and the layout knows what to do. When you add three children, the fourth will be added on the next row.\nNow go and change the line that reads\n\n\nself.cols = 3\n\n\n\n\nto\n\n\nself.rows = 2\n\n\n\n\nThis forces the layout to have two rows of items. The image is shown below\n\n\n\n\nTry adding more buttons to the layout. You will find out that the buttons will always be forced to two rows.\n\n\nUp till now Only Buttons?\n\n\nAll we have been doing is play with buttons. Do not get bothered so soon. We will be seeing more widgets soon. Here, all I want to do is introduce you to make you know all the necessary layouts that you will encounter or need. In fact in the next section we will build our first meaningful app. I do not know what we will build yet but let's proceed with our layouts..\n\n\nAnchorLayout\n\n\nThe anchorlayout is used when you want widgets placed on a particular location on the screen. It is controlled by the properties \nanchor_x\n and \nanchor_y\n. Setting anchor_x to \nleft\n means that the widgets will be placed on the leftmost part of your layout. Other possible values for anchor_x are, \ncenter\n,and \nright\n. Property \nanchor_y\n controls where widgets are placed on the y-axis of your layout. Possible values for anchor_y are \ncenter\n,\ntop\n,\ntop\n.\nLet us see some sample code \n\n\nfrom kivy.uix.anchorlayout import AnchorLayout\nfrom kivy.uix.button import Button\nfrom kivy.app import App\n\nclass Anchor(AnchorLayout):\n    def __init__(self, **kwargs):\n        super(Anchor,self).__init__(**kwargs)\n        self.anchor_x = 'left'\n        self.anchor_y = 'bottom'\n        b1 = Button(text='B1',size_hint=(.4,.3))   \n        b2 = Button(text='B2',size_hint=(.2,.3))    \n        b3 = Button(text='B3',size_hint=(.2,.5))    \n        b4 = Button(text='B4',size_hint=(.2,.2))  \n        self.add_widget(b1)\n        self.add_widget(b2)\n        self.add_widget(b3)\n        self.add_widget(b4)\nclass MainApp(App):\n    def build(self):\n        return Anchor()\n\nif __name__ == '__main__':\n    MainApp().run()\n\n\n\n\nThe image rendered follows\n\n\n\n\nYou will see the widgets stacked to the bottom left of the screen. Try altering the values for anchor_x and anchor_y to see the effect. The truth is I rarely use the AnchorLayout but it is good fo absolute positioning.\n\n\nWhat is that new size_hint stuff?\n\n\nIf you have gone through the code, you will see a new thing, the \nsize_hint\n on the buttons. The size_hint is a tuple or list. It sets the size for the width and height, the first being the width and the second being the height.\n\n\nsize_hint = (.2,.4)\n\n\n\n\nmeans that we want the button to take 20% of the parent layout's width,Anchor and 40% of the height . If we did not specify the size_hint on the buttons, the only widget displayed will have been the widget added last, that is b4. More about size_hinting in the future..\n\n\nMore Layouts\n\n\nI will leave the layouts stuff here. I will advise you to check the RelativeLayout and FloatLayout most importantly. You should also check others mentioned or not mentioned because we will use them in other parts.\n\n\nWhat next?\n\n\nLet us build our first app in the next section..", 
+            "title": "Layouts"
+        }, 
+        {
+            "location": "/layouts/#layouts", 
+            "text": "As mentioned in the previous section, layouts serve as containers for holding widgets and other layouts as well.In fact layouts are widgets as well. We will not mention all the layouts here, but we will work with the most important or most widely used ones that you will need.\nThe following are some , if not all layouts of kivy: AnchorLayout,BoxLayout,FloatLayout,GridLayout,PageLayout,RelativeLayout,ScatterLayout and more. But the ones that are widely used are BoxLayout,GridLayout.For a list of all layouts, you can always refer to the kivy documentation.", 
+            "title": "Layouts"
+        }, 
+        {
+            "location": "/layouts/#boxlayout", 
+            "text": "The BoxLayout places widgets on the screen either vertically,  or horizontally.So you can say that a BoxLayout is either a vertical BoxLayout or a horizontal BoxLayout. Let us see a BoxLayout with three buttons.  from kivy.app import App\nfrom kivy.uix.boxlayout import BoxLayout\nfrom kivy.uix.button import Button\n\n\nclass RootWidget(BoxLayout):\n    def __init__(self,**kwargs):\n        super(RootWidget,self).__init__(**kwargs)\n        self.orientation = 'horizontal'\n        self.add_widget(Button(text='Button1'))\n        self.add_widget(Button(text='Button2'))\n        self.add_widget(Button(text='Button3'))\n\n\n\nclass MainApp(App):\n    def build(self):\n        return RootWidget()\nif __name__ == __main__ :\n    MainApp().run()   This produces the following image", 
+            "title": "BoxLayout"
+        }, 
+        {
+            "location": "/layouts/#explanation", 
+            "text": "The first few lines do the usual imports. And note that you must import anything that you need before you can use it.\nPreviously, we returned just a button in the build method of our App class. But to have a layout with more widgets, in this case we create our own BoxLayout that we call RootWidget.It is not mandatory to call it RootWidget but you can give it the name you want. If you have done Object Oriented Python, the  __init__  method should not be new to you. We call super() within init, and what that does it to call the  __init__  method of our parent widget  BoxLayout . As seen on the above image,the buttons are laid out from left to right and each occupies the same amount of space.This is done by the line  self.orientation = 'horizontal'  We told it to lay the children widgets from left to right.", 
+            "title": "Explanation"
+        }, 
+        {
+            "location": "/layouts/#method-add_widget", 
+            "text": "Calling self.add_widget() simply means that we want a widget, in this case Buttons, to be added to the layout.You pass to add_widget() a widget instance.", 
+            "title": "Method add_widget()"
+        }, 
+        {
+            "location": "/layouts/#vertical-boxlayout", 
+            "text": "To have out buttons displayed vertically, just change the line   self.orientation = 'horizontal'   to  self.orientation = 'vertical'   You should now see the following image rendered", 
+            "title": "Vertical BoxLayout"
+        }, 
+        {
+            "location": "/layouts/#important", 
+            "text": "Something that we forgot to mention in the previous section is that you must call App().run() before you can see your application displayed", 
+            "title": "Important"
+        }, 
+        {
+            "location": "/layouts/#gridlayouts", 
+            "text": "The GridLayout widget is a widget that arranges its children in grids. It has two important properties;  cols and rows . You set  cols  when want a certain number of columns and  rows  when you want a certain number of rows. So if I have a gridlayout widget and I set the property  self.cols = 3 , the widget will be arranged in three columns. Enough of the talk. Let us see some code..  from kivy.app import App\nfrom kivy.uix.button import Button\nfrom kivy.uix.boxlayout import BoxLayout\nfrom kivy.uix.gridlayout import GridLayout\n\n\nclass RootWidget(GridLayout):\n    def __init__(self,**kwargs):\n        super(RootWidget,self).__init__(**kwargs)\n        self.cols = 3\n        self.add_widget(Button(text='Button1'))\n        self.add_widget(Button(text='Button2'))\n        self.add_widget(Button(text='Button3'))\n        self.add_widget(Button(text='Button4'))\n        self.add_widget(Button(text='Button5'))\n        self.add_widget(Button(text='Button6'))\n        self.add_widget(Button(text='Button7'))\n        self.add_widget(Button(text='Button8'))\n        self.add_widget(Button(text='Button9'))\n\nclass MainApp(App):\n    def build(self):\n        return RootWidget()\nif __name__ == __main__ :\n    MainApp().run()   This renders the following image    We set cols property to  cols  property to 3 and the layout knows what to do. When you add three children, the fourth will be added on the next row.\nNow go and change the line that reads  self.cols = 3  to  self.rows = 2  This forces the layout to have two rows of items. The image is shown below   Try adding more buttons to the layout. You will find out that the buttons will always be forced to two rows.", 
+            "title": "GridLayouts"
+        }, 
+        {
+            "location": "/layouts/#up-till-now-only-buttons", 
+            "text": "All we have been doing is play with buttons. Do not get bothered so soon. We will be seeing more widgets soon. Here, all I want to do is introduce you to make you know all the necessary layouts that you will encounter or need. In fact in the next section we will build our first meaningful app. I do not know what we will build yet but let's proceed with our layouts..", 
+            "title": "Up till now Only Buttons?"
+        }, 
+        {
+            "location": "/layouts/#anchorlayout", 
+            "text": "The anchorlayout is used when you want widgets placed on a particular location on the screen. It is controlled by the properties  anchor_x  and  anchor_y . Setting anchor_x to  left  means that the widgets will be placed on the leftmost part of your layout. Other possible values for anchor_x are,  center ,and  right . Property  anchor_y  controls where widgets are placed on the y-axis of your layout. Possible values for anchor_y are  center , top , top .\nLet us see some sample code   from kivy.uix.anchorlayout import AnchorLayout\nfrom kivy.uix.button import Button\nfrom kivy.app import App\n\nclass Anchor(AnchorLayout):\n    def __init__(self, **kwargs):\n        super(Anchor,self).__init__(**kwargs)\n        self.anchor_x = 'left'\n        self.anchor_y = 'bottom'\n        b1 = Button(text='B1',size_hint=(.4,.3))   \n        b2 = Button(text='B2',size_hint=(.2,.3))    \n        b3 = Button(text='B3',size_hint=(.2,.5))    \n        b4 = Button(text='B4',size_hint=(.2,.2))  \n        self.add_widget(b1)\n        self.add_widget(b2)\n        self.add_widget(b3)\n        self.add_widget(b4)\nclass MainApp(App):\n    def build(self):\n        return Anchor()\n\nif __name__ == '__main__':\n    MainApp().run()  The image rendered follows   You will see the widgets stacked to the bottom left of the screen. Try altering the values for anchor_x and anchor_y to see the effect. The truth is I rarely use the AnchorLayout but it is good fo absolute positioning.", 
+            "title": "AnchorLayout"
+        }, 
+        {
+            "location": "/layouts/#what-is-that-new-size_hint-stuff", 
+            "text": "If you have gone through the code, you will see a new thing, the  size_hint  on the buttons. The size_hint is a tuple or list. It sets the size for the width and height, the first being the width and the second being the height.  size_hint = (.2,.4)  means that we want the button to take 20% of the parent layout's width,Anchor and 40% of the height . If we did not specify the size_hint on the buttons, the only widget displayed will have been the widget added last, that is b4. More about size_hinting in the future..", 
+            "title": "What is that new size_hint stuff?"
+        }, 
+        {
+            "location": "/layouts/#more-layouts", 
+            "text": "I will leave the layouts stuff here. I will advise you to check the RelativeLayout and FloatLayout most importantly. You should also check others mentioned or not mentioned because we will use them in other parts.", 
+            "title": "More Layouts"
+        }, 
+        {
+            "location": "/layouts/#what-next", 
+            "text": "Let us build our first app in the next section..", 
+            "title": "What next?"
+        }
+    ]
+}
